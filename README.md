@@ -6,7 +6,7 @@ by[Michael Hartl](http://michaelhartl.com/)
 
 
 
-----訂正前-----
+-----訂正前-----
 == README
 
 This README would normally document whatever steps are necessary to get the
