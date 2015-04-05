@@ -9,7 +9,10 @@ describe "User pages" do
     #end
   #end
 #end
-  
+
+
+#８章でコメントアウト
+=begin
   subject {page}
 
   describe "profile page" do
@@ -31,13 +34,13 @@ describe "User pages" do
     before{ visit signup_path}
 
     let(:submit){"Create my account"}
-=begin
+# ===================
     describe "with invalid information" do
       it "should not create a user" do
         expect{ click_button submit }.not_to change(User, :count)
       end
     end
-=end
+# ==================
     describe "with valid information" do
       before do
         fill_in "Name", with: "Example User"
@@ -50,7 +53,8 @@ describe "User pages" do
         expect { click_button submit }.to change(User, :count).by(1)
         # submit { click_button }.should change(User, :count).by(1)
       end
-    end
-  end
+=end
 end
+ # end
+#end
 
